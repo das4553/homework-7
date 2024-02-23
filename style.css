@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "GT-Super-Display-Light";
+  src: url(font/GT-Super-Display-Light-Trial.otf);
+}
+@font-face {
+  font-family: "Suissenlntl";
+  src: url(font/SuisseIntl-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: #d4a303;
+}
+
+header {
+  background-color: #d7d2ca;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6vh;
+  padding: 20px 5%;
+  z-index: 99;
+}
+
+body {
+  background: #d7d2ca;
+  height: 1000vh;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #978e80;
+  font-size: 14px;
+  font-family: "Suissenlntl";
+}
+
+nav ul li:nth-child(1) a {
+  color: #171716;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0d9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+.text {
+  font-family: "GT-Super-Display-Light";
+  margin-top: 7rem;
+  font-size: 5rem;
+  line-height: 1.4;
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  width: 100%;
+}
+
+.section-1 {
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 5%;
+  margin: auto;
+  margin-left: 60px;
+  width: fit-content;
+}
+
+@media (width < 1232px) {
+  .text {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+}
+
+.hover-1:hover {
+  background: url(images/image12.jpg);
+  background-size: contain;
+  width: fit-content;
+  height: 60vh;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  animation-name: imgslide-1;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  color: #d4a405;
+  background-repeat: no-repeat;
+}
+
+@keyframes imgslide-1 {
+  20% {
+    background-image: url(images/image13.jpg);
+  }
+  40% {
+    background-image: url(images/image14.jpg);
+  }
+  60% {
+    background-image: url(images/image15.jpg);
+  }
+  80% {
+    background-image: url(images/image16.jpg);
+  }
+}
+
+.hover-2:hover {
+  background: url(images/image1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: fit-content;
+  height: 60vh;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  animation-name: imgslide-2;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  color: #d4a405;
+}
+
+@keyframes imgslide-2 {
+  20% {
+    background-image: url(images/image2.jpg);
+  }
+  40% {
+    background-image: url(images/image3.jpg);
+  }
+  60% {
+    background-image: url(images/image4.jpg);
+  }
+  80% {
+    background-image: url(images/image5.jpg);
+  }
+}
+
+.hover-3:hover {
+  background: url(images/image6.jpg);
+  background-size: contain;
+  width: fit-content;
+  height: 60vh;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  animation-name: imgslide-3;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  color: #d4a405;
+  background-repeat: no-repeat;
+}
+
+@keyframes imgslide-3 {
+  20% {
+    background-image: url(images/image7.jpg);
+  }
+  40% {
+    background-image: url(images/image7.jpg);
+  }
+  60% {
+    background-image: url(images/image8.jpg);
+  }
+  80% {
+    background-image: url(images/image9.jpg);
+  }
+}
